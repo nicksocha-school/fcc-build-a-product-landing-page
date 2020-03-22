@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <!-- CSS Style Sheet -->
+    <link href="css/style.css" rel="stylesheet">
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png">
+    <title>Build a Product Landing Page</title>
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/595c537952.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- Header -->
+    <header id="header">
+        <a href="https://nicksocha-school.github.io/fcc-build-a-product-landing-page/">
+            <img id="header-img" src="images/keyboard-solid.png" alt="Logo">
+        </a>
+        <nav id="nav-bar" class="header-nav">
+            <ul>
+                <li><a class="nav-link" href="#about">About</a></li>
+                <li><a class="nav-link" href="#video-section">Video</a></li>
+                <li><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Home Section -->
+        <section class="home">
+            <div class="home-hello">
+                <h1>Mechanical Mayhem</h1>
+                <!-- Home Carousel -->
+                <h2><span><span class="txt-rotate"></span></h2>
+            </div>
+            <hr>
+            <img id="home-image" src="images/Ducky-One-2-Skyline-TKL.png" alt="Keyboard">
+            <hr>
+        </section>
+        <!-- About Section -->
+        <hr class="transparent" id="about">
+        <section class="about">
+            <div class="about-mm">
+                <div>
+                    <h3><a class="no-hover">About Mechanical Mayhem <span class="emoji">⌨️</span></a></h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem sequi excepturi rem autem.
+                        Unde, maxime soluta placeat praesentium dolor nulla doloremque doloribus magnam sed quibusdam
+                        eius fuga tempore voluptatibus optio.</p>
+                    <!-- Specifications Table -->
+                    <table>
+                        <thead>
+                            <tr>
+                                <th colspan="2">Specifications</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Structure</td>
+                                <td>Mechanical structure</td>
+                            </tr>
+                            <tr>
+                                <td>Trigger switch</td>
+                                <td>Cherry MX mechanical switches</td>
+                            </tr>
+                            <tr>
+                                <td>Connection interface</td>
+                                <td>USB 2.0</td>
+                            </tr>
+                            <tr>
+                                <td>Keycap material</td>
+                                <td>PBT</td>
+                            </tr>
+                            <tr>
+                                <td>Output key number</td>
+                                <td>USB N-Key Rollover</td>
+                            </tr>
+                            <tr>
+                                <td>Printing technology</td>
+                                <td>Double-Shot or Laser Engraved</td>
+                            </tr>
+                            <tr>
+                                <td>Dimensions</td>
+                                <td>365 x 135 x 1 ft <span class="emoji">🤩</span></td>
+                            </tr>
+                            <tr>
+                                <td>Weight</td>
+                                <td>950 lbs</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="about-mm-pic">
+                    <img id="about-mm-pic" src="images/Ducky-One-2-Horizon-TKL.png" alt="Ducky One 2 Horizon TKL">
+                </div>
+            </div>
+        </section>
+        <!-- Video Section -->
+        <hr class="transparent" id="video-section">
+        <section class="video-section">
+            <div class="video-container">
+                <iframe id="video" src="https://www.youtube-nocookie.com/embed/D7wmMZmMinM" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+        </section>
+        <!-- Contact Section -->
+        <hr class="transparent" id="contact">
+        <section class="contact">
+            <div>
+                <h3><a class="no-hover">Contact Us <span class="emoji">📇</span></a></h3>
+            </div>
+            <div class="contact-container">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae ipsam dignissimos ex rerum accusamus
+                    possimus molestiae ad eligendi corporis praesentium, ea ipsa error minima ratione nulla sunt
+                    sapiente, quae voluptatum?</p>
+                <div class="form-container">
+                    <form id="form" action="https://www.freecodecamp.com/email-submit">
+                        <!-- Name -->
+                        <div class="form-group">
+                            <label id="name-label" for="name">Name</label>
+                            <input type="text" name="name" id="name" class="form-control"
+                                placeholder="Enter your name..." required />
+                        </div>
+                        <!-- Email -->
+                        <div class="form-group">
+                            <label id="email-label" for="email">Email</label>
+                            <input type="email" name="email" id="email" class="form-control"
+                                placeholder="Enter your Email..." required />
+                        </div>
+                        <!-- Subscribe? -->
+                        <div class="form-group">
+                            <p>Would you like to receive future updates? <span class="clue">(No Spam EVER we
+                                    promise!)</span> </p>
+                            <label><input name="subscribe" value="definitely" type="radio"
+                                    class="input-radio" />Definitely</label>
+                            <label><input name="subscribe" value="maybe" type="radio"
+                                    class="input-radio" />Maybe</label>
+                            <label><input name="subscribe" value="not-sure" type="radio" class="input-radio"
+                                    checked />Not
+                                sure</label>
+                        </div>
+                        <!-- Help -->
+                        <div class="form-group">
+                            <p>What can we help you with?<span class="clue">(Check all that apply)</span></p>
+                            <label><input name="help" value="mechanical-keyboards" type="checkbox"
+                                    class="input-checkbox" />Mechanical Keyboards</label>
+                            <label><input name="help" value="keycaps" type="checkbox"
+                                    class="input-checkbox" />Keycaps</label>
+                            <label><input name="help" value="switches" type="checkbox"
+                                    class="input-checkbox" />Switches</label>
+                            <label><input name="help" value="frames" type="checkbox"
+                                    class="input-checkbox" />Frames</label>
+                            <label><input name="help" value="other" type="checkbox" class="input-checkbox" />Other<input
+                                    type="text" id="other-value" name="other"></label>
+                        </div>
+                        <!-- Comments / Suggestions -->
+                        <div class="form-group">
+                            <p>Comments or suggestions?</p>
+                            <textarea id="comments" class="input-textarea form-control" name="comment"
+                                placeholder="Enter your comment here..."></textarea>
+                        </div>
+                        <!-- Submit -->
+                        <div class="form-group">
+                            <input id="submit" type="submit" value="Get Started" class="submit-button" />
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer>
+        <!-- Mechanical Mayhem #Year -->
+        <h6 id="year"></h6>
+        <!-- Footer Social -->
+        <div>
+            <a class="typeform-share button" href="https://nicksocha.typeform.com/to/AxlpHy" data-mode="popup"
+                data-auto-open=false data-hide-headers=true data-hide-footer=true data-submit-close-delay="1"
+                target="_blank"><i class="fas fa-envelope-square fa-3x footer-social"></i></a>
+            <a href="http://github.nicksocha.com" target="_blank" rel="noreferrer"><i
+                    class="fab fa-github-square fa-3x footer-social"></i></a>
+            <a href="http://codepen.nicksocha.com" target="_blank" rel="noreferrer"><i
+                    class="fab fa-codepen fa-3x footer-social"></i></a>
+            <a href="http://twitter.nicksocha.com" target="_blank" rel="noreferrer"><i
+                    class="fab fa-twitter-square fa-3x footer-social"></i></a>
+            <a href="http://linkedin.nicksocha.com" target="_blank" rel="noreferrer"><i
+                    class="fab fa-linkedin fa-3x footer-social"></i></a>
+        </div>
+    </footer>
+    <!-- Back to top button -->
+    <button id="back-to-top-btn"><i class="fas fa-angle-double-up fa-2x"></i></button>
+    <!-- JavaScript -->
+    <script src="js/app.js"></script>
+    <!-- <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> -->
+</body>
+
+</html>
